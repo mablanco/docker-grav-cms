@@ -5,7 +5,7 @@ This image sets up a development environment (including Grav Admin plugin) and r
 
 ## How to use this image
 
-This will start a Bolt CMS instance listening on port 80:
+This will start a Grav CMS instance listening on port 80:
 
 ```
 $ docker run -d -p 80:80 --name grav mablanco/grav-cms
