@@ -1,5 +1,5 @@
 FROM php:7.2-apache
-ARG GRAV_VERSION=1.5.3
+ARG GRAV_VERSION=1.5.5
 WORKDIR /var/www/html
 RUN apt-get update && \
     apt-get -y install libgd-dev libyaml-dev unzip && \
