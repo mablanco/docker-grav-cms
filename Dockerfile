@@ -8,7 +8,7 @@ RUN curl -LO https://github.com/getgrav/grav/releases/download/$GRAV_VERSION/gra
     unzip grav-admin-v$GRAV_VERSION.zip && \
     mv grav-admin/* . && \
     mv grav-admin/.[a-z]* . && \
-    rm -rf grav-admin-v1.5.3.zip grav-admin
+    rm -rf grav-admin-v$GRAV_VERSION.zip grav-admin
 RUN mv $PHP_INI_DIR/php.ini-development $PHP_INI_DIR/php.ini
 RUN docker-php-ext-install -j$(nproc) gd
 RUN docker-php-ext-install -j$(nproc) zip
