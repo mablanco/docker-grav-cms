@@ -1,4 +1,4 @@
-FROM php:7.2-apache
+FROM php:7.4.4-apache-buster
 ARG GRAV_VERSION=1.5.5
 WORKDIR /var/www/html
 RUN apt-get update && \
@@ -11,7 +11,7 @@ RUN curl -LO https://github.com/getgrav/grav/releases/download/$GRAV_VERSION/gra
     rm -rf grav-admin-v$GRAV_VERSION.zip grav-admin
 RUN mv $PHP_INI_DIR/php.ini-development $PHP_INI_DIR/php.ini
 RUN docker-php-ext-install -j$(nproc) gd
-RUN docker-php-ext-configure zip --with-libzip && \
+RUN docker-php-ext-configure zip && \
     docker-php-ext-install -j$(nproc) zip
 RUN docker-php-ext-install -j$(nproc) opcache
 RUN pecl install yaml && \
