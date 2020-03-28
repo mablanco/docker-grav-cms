@@ -7,13 +7,9 @@ This image sets up a development environment (including Grav Admin plugin) and r
 
 This will start a Grav CMS instance listening on port 80:
 
-```
-$ docker run -d -p 80:80 --name grav mablanco/grav-cms
-```
+    $ docker run -d -p 80:80 --name grav mablanco/grav-cms
 
 If you'd like persistance, you can create a volume for that purpose:
 
-```
-$ docker volume create grav_web
-$ docker run -d -p 80:80 --name grav -v grav_web:/var/www/html mablanco/grav-cms
-```
+    $ docker volume create grav_web
+    $ docker run -d -p 80:80 --name grav -v grav_web:/var/www/html mablanco/grav-cms
