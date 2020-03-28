@@ -1,5 +1,5 @@
 # docker-grav-cms
-Docker image for Grav CMS, a modern open source flat-file CMS (https://getgrav.org/).
+Docker image for Grav CMS, a modern open source flat-file CMS (<https://getgrav.org/>).
 
 This image sets up a development environment (including Grav Admin plugin) and relies on Debian Linux, Apache 2 and PHP7.
 
