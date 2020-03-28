@@ -1,5 +1,5 @@
 FROM php:7.4.4-apache-buster
-ARG GRAV_VERSION=1.5.5
+ARG GRAV_VERSION=1.6.23
 WORKDIR /var/www/html
 RUN apt-get update && \
     apt-get -y install libgd-dev libyaml-dev unzip zip libzip-dev && \
