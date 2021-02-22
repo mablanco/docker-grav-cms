@@ -1,6 +1,6 @@
 FROM php:7.4.9-apache-buster
 ENV DEBIAN_FRONTEND noninteractive
-ARG GRAV_VERSION=1.7.3
+ARG GRAV_VERSION=1.7.6
 WORKDIR /var/www/html
 RUN apt-get update && \
     apt-get -y install libgd-dev libyaml-dev unzip zip libzip-dev && \
