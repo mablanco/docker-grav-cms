@@ -1,6 +1,6 @@
-FROM php:8.3.13-apache
+FROM php:8.4.16-apache
 ARG DEBIAN_FRONTEND=noninteractive
-ARG GRAV_VERSION=1.7.48
+ARG GRAV_VERSION=1.7.49.5
 WORKDIR /var/www/html
 RUN apt-get update && \
     apt-get -y install libgd-dev libyaml-dev unzip zip libzip-dev && \
